@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Chakra+Petch:wght@500&family=Cinzel&family=Fugaz+One&family=Inter&family=Monoton&family=Orbitron:wght@900&family=Oswald:wght@500&family=Plus+Jakarta+Sans:wght@400;600;700&family=Roboto+Slab&family=Source+Code+Pro:wght@400;700&family=Ultra&display=swap');
+
+* {
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+nav {
+    width: 100%;
+}
+
+ul {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
+#home li a {
+    color: #121212;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#navbar li {
+    padding-left: 35px;
+}
+
+#navbar li a {
+    color: #121212;
+    transition: color 300ms ease-in-out;
+}
+
+#navbar li a:hover {
+    color: rgb(243, 120, 67);
+}
+
+#hamburger-icon {
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger-icon div {
+    width: 20px;
+    height: 2px;
+    background-color: #121212;
+    border-radius: 2px;
+    margin: 6px 0px;
+    transition: 0.3s;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 5px);
+    transform: rotate(-45deg) translate(-6px, 5px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -6px);
+    transform: rotate(45deg) translate(-6px, -6px);
+}
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-left: 51px;
+    background-color: white;
+    z-index: 2;
+    box-shadow: 0px 12px 10px 0 rgb(0 0 0 / 20%);
+    height: 240px;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.mobile-menu li {
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.mobile-menu li a {
+    color: #121212;
+    transition: color 300ms ease-in-out;
+}
+
+.mobile-menu li a:hover {
+    color: #F37843;
+}
+
+@media only screen and (max-width: 773px) {
+    #home img {
+        width: 15vw;
+        height: auto;
+    }
+    #navbar {
+        display: none;
+    }
+    #hamburger-icon {
+        display: block;
+    }
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        order: 5;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    #opening-text {
+        align-items: center;
+        width: 100%;
+    }
+    #opening-text h1 {
+        font-size: 40px;
+        font-weight: 700;
+        margin: 0;
+    }
+    #banner img {
+        width: 60vw;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 773px) {
+    #home img {
+        width: 6vw;
+        height: auto;
+    }
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+    #opening-text {
+        width: 50vw;
+    }
+    #opening-text h1 {
+        font-size: 64px;
+        font-weight: 700;
+        margin: 0;
+    }
+    #banner img {
+        width: 30vw;
+        height: auto;
+    }
+}
+
+#opening-text {
+    justify-content: center;
+    background-color: #F37843;
+  
+    /* Create the gradient. */
+    background-image: linear-gradient(108deg, #f73f0c 10%, #F37843 30%, rgb(255, 210, 75) 90%);
+    
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+#opening-text p {
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 0;
+}
+
+#opening-text span {
+    background-color: rgb(155, 155, 155);
+    font-size: 24px;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+footer {
+    color: rgb(155, 155, 155);
+    padding: 40px;
+}
+
+footer p {
+    margin-top: 40px
+}
+
+#contact h4 {
+    color: #121212;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+#contact p a {
+    color:rgb(155, 155, 155);
+    text-decoration: none;
+}
+
+#contact p {
+    color:rgb(155, 155, 155);
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+#contact img {
+    margin-top: 5px;
+    width: 30px;
+    height: auto;
+    transition: all 300ms ease-in-out;
+}
+
+#contact img:hover {
+    opacity: 0.5;
+}
