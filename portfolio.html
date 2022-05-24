@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="shortcut icon" type="image/ico" href="images/flavicon2.png"/>
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div id="home">
+                    <li><a href="index.html"><img src="images/logo3.png" alt="my logo"></a></li>
+                </div>
+                <div id="navbar">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="Senior Yr Resume.pdf" target="_blank">Resume</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </div>
+            </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="Senior Yr Resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div id="opening-text">
+            <h1 id="message">Portfolio</h1>
+            <p>Below you will find some of the key projects I have worked on to date.</p>
+        </div>
+        <div id="content">
+            <a href="markit.html">
+                <div class="content-box">
+                    <div class="project-image"><img src="images/markitsocial.png" alt="markit social"></div>
+                    <div class="description">
+                        <h3>Markit Social, Inc.</h3>
+                        <p>A collection of high-fidelity prototypes developed for the UI of the new Boston-based social media app, Markit (Markit Social, Inc.), where I served as a Product Design Intern for three months.</p>
+                        <div class="tags">
+                            <span>UX/UI Design</span>
+                            <span>User Research</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="ENP165_Final_Project.pdf">
+                <div class="content-box">
+                    <div class="project-image"><img src="images/keyshot4.png" alt="dumdesk" style="filter: grayscale(100%)"></div>
+                    <div class="description">
+                        <h3>DumDesk</h3>
+                        <p>A final project completed as coursework for the course ENP165: Industrial Design Essentials.</p>
+                        <div class="tags">
+                            <span>Industrial Design</span>
+                            <span>User Research</span>
+                            <span>CAD</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="glucosemeter.pdf">
+                <div class="content-box">
+                    <div class="project-image"><img src="images/usabilitytest.png" alt="usability test"></div>
+                    <div class="description">
+                        <h3>Usability Testing the CareTouch® Blood Glucose Monitoring System</h3>
+                        <p>A formative usability assessment of a glucose moniter, completed as coursework for the course ENP110: Human Factors in Medical Technology.</p>
+                        <div class="tags">
+                            <span>Human Factors</span>
+                            <span>Usability Testing</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="inclusivedesign.pdf">
+                <div class="content-box">
+                    <div class="project-image"><img src="images/drill.png" alt="inclusive drill design"></div>
+                    <div class="description">
+                        <h3>Inclusive Design: Creating a Cordless Screwdriver for Someone with Parkinson's Disease</h3>
+                        <p>A project completed as coursework for the course ME40: Engineering Design I; carried out the design process to create a cordless screwdriver for someone with early stage Parkinson's Disease.</p>
+                        <div class="tags">
+                            <span>Human Factors</span>
+                            <span>Usability Testing</span>
+                            <span>CAD</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="AccuFlow.pdf">
+                <div class="content-box">
+                    <div class="project-image"><img src="images/accuflow.png" alt="accuflow"></div>
+                    <div class="description">
+                        <h3>AccuFlow</h3>
+                        <p>An entrepreneurial project in progress, aimed at solving an antiquated procedure in the postoperative surgical process.</p>
+                        <div class="tags">
+                            <span>Entrepreneurship</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="ENP165-AED.pdf">
+                <div class="content-box">
+                    <div class="project-image"><img src="images/zoll.png" alt="zoll AED 3 redesign"></div>
+                    <div class="description">
+                        <h3>Zoll AED 3 Redesign</h3>
+                        <p>A project completed as coursework for the course ENP165: Industrial Design Essentials.</p>
+                        <div class="tags">
+                            <span>Industrial Design</span>
+                            <span>Human Factors</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <div id="contact">
+            <h4>Let's get connected!</h4>
+            <p><a href="mailto:colby.cho@tufts.edu" target="_blank">colby.cho@tufts.edu</a></p>
+            <p>914.336.1006</p>
+            <a href="https://linkedin.com/in/colby-cho-023ab71b9"><img src="images/linkedin.png" alt="linkedin"></a>
+        </div>
+        <p>Colby Cho &copy; 2022</p>
+    </footer>
+    <script>
+        function toggleMobileMenu(menu) {
+                menu.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
