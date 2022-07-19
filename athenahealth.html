@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/markit.css">
+    <link rel="shortcut icon" type="image/ico" href="images/flavicon2.png"/>
+    <title>About</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div id="home">
+                    <li><a href="index.html"><img src="images/logo3.png" alt="my logo"></a></li>
+                </div>
+                <div id="navbar">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="Senior Yr Resume.pdf" target="_blank">Resume</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </div>
+            </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="Senior Yr Resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div id="opening-text">
+            <h1 id="message">athenahealth</h1>
+            <div id="position-details">
+                <p>UX Design Intern</p>
+                <span id="timeframe">Jun - Aug 2022</span>
+            </div>
+        </div>
+        <div id="banner">
+            <img src="images/athenahealth.png" alt="athenahealth">
+        </div>
+        <div class="project-details">
+            <br>
+            <div class="new-design-spec">
+                <h3>Background</h3>
+                <p>Markit Social, Inc. is a new Boston-based social media app that helps young adults find, plan, and attend local events with friends. The app functions similarly to Tinder in that users swipe right or left on their home page to indicate interest in certain events.</p>
+                <p>Ultimately, Markit is trying to revolutionize the event industry through their all-in-one platform, providing event-goers and event-hosters with a seamless plan-to-action experience.</p>
+                <img src="images/appstore.png" alt="appstore screenshots">
+            </div>
+            <br>
+            <div class="new-design-spec">
+                <h3>My Role</h3>
+                <p>I served as one of two Product Development Interns and as a Business Lead. I helped craft Markit's UI by conducting user research, engaging in persona development, wireframing, usability testing, and more.</p>
+                <img src="images/markitsquad.jpg" alt="the markit team">
+            </div>
+            <br>
+            <div class="new-design-spec">
+                <h3>The Challenge</h3>
+                <p>In light of recent user interviews, Markit’s core value proposition changed. We found that people valued the planning aspect of the original app much more than the app’s previous features. The newfound mission was (and is) to create the ultimate event-planning platform in which users could explore, plan, and attend local events without having to hop between services like Facebook events and Ticketmaster. This pivoted warranted a near-complete redesign of the app.</p>
+            </div>
+            <br>
+            <div class="new-design-spec">
+                <h3>Revisiting Personas</h3>
+                <p>As a result of such a drastic change in the app's value, we needed to revisit our personas. We changed these personas to reflect the sentiment expressed by so many Markit users during interviews: People want a centralized place for local event-exploration and planning.</p>
+                <img src="images/Persona1.png" alt="persona 1">
+                <img src="images/Persona2.png" alt="persona 2">
+            </div>
+            <br>
+            <div id="new-ui">
+                <h3>Designing the New UI</h3>
+                <h4>A New Onboarding Experience</h4>
+                <h5>User Requirements</h5>
+                <ul>
+                    <li>The fewer the steps the better. E.g., Users interviewed did not want to complete steps that they deemed "unnecessary."</li>
+                    <li>The experience must be intuitive/simple.</li>
+                </ul>
+                <h5>Solution</h5>
+                <p>I crafted as direct an onboarding experience as possible. I allowed for skippable steps where justified while also acquiring all of the required user input.</p>
+                <img src="images/wireframe.png" alt="onboarding wireframes">
+                <img src="images/onboarding.png" alt="onboarding 1">
+                <img src="images/onboarding2.png" alt="onboarding 2">
+                <br><br>
+                <h5>Methods</h5>
+                <p>High-fidelity wireframing (Figma) and user interviews</p>
+                <br>
+
+                <hr>
+                
+                <h4>A Redesigned Homepage</h4>
+                <h5>User Requirements</h5>
+                <ul>
+                    <li>The home feed must be engaging and spark excitement.</li>
+                    <li>The home feed must facilitate local event-finding</li>
+                    <li>The experience must support three key functions: indicating interest, disinterest, or attendance for an event</li>
+                </ul>
+                <h5>Solution</h5>
+                <p>After ideating and deliberating, we agreed on a Tinder-esque, card-style home page in which users would be presented with one event at a time, swiping right to indicate interest, left for disinterest, up if the user was going to the event, and tapping for more event details.</p>
+                <div id="swipe-frames">
+                    <img id="home-page" src="images/swiping.png" alt="markit home page">
+                    <img id="event-page" src="images/event.png" alt="markit event page">
+                </div>
+                <br>
+                <h5>Rationale</h5>
+                <ul>
+                    <li>This interface fit within our personas' mental models (college students/young adults) who regularly use dating apps like Tinder and Bumble.</li>
+                    <li>The design was validated via user testing.</li>
+                </ul>
+                <h5>Methods</h5>
+                <p>High-fidelity wireframing (Figma), user workflows, and user testing</p>
+                <br>
+
+                <hr>
+
+                <h4>The Event Calendar</h4>
+                <h5>User Requirements</h5>
+                <ul>
+                    <li>Users must have a designated place to track upcoming and past events that they are hosting, attending, or are interested in.</li>
+                    <li>This page should support RSVP and external sharing functions.</li>
+                </ul>
+                <h5>Solution</h5>
+                <p>We crafted an event calendar which could be toggled to show events of a certain type in chronological order.</p>
+                <div id="event-calendar-imgs">
+                    <img id="calendar-1" src="images/calendar1.png" alt="event calendar 1">
+                    <img id="calendar-2" src="images/calendar2.png" alt="event calendar 2">
+                </div>
+                <br>
+                <h5>Methods</h5>
+                <p>High-fidelity wireframing (Figma) and user workflows</p>
+                <br>
+
+                <hr>
+
+            </div>
+            <br>
+            <div class="new-design-spec">
+                <h3>The Outcome</h3>
+                <p>Markit Social, Inc. provided me with experience in a real, fast-paced agile environment. Since I joined Markit so early into the startup process, I felt as though everything I was working on —from wireframes to business partnerships —was making a tangible impact on the trajectory of the company. While I was at Markit, we managed to grow our user base by more than threefold: almost half of the Tufts University student body was using the app. Now Markit has expanded to other universities like Northeastern and Duke.</p>
+                <div class="links">
+                    <a target="_blank" href="https://www.markitsocial.net/">Markit Social website</a>
+                    <a target="_blank" href="https://apps.apple.com/us/app/markit-explore-and-connect/id1549432558">Download Markit</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="contact">
+            <h4>Let's get connected!</h4>
+            <p><a href="mailto:colby.cho@tufts.edu" target="_blank">colby.cho@tufts.edu</a></p>
+            <p>914.336.1006</p>
+            <a href="https://linkedin.com/in/colby-cho-023ab71b9"><img src="images/linkedin.png" alt="linkedin"></a>
+        </div>
+        <p>Colby Cho &copy; 2022</p>
+    </footer>
+    <script>
+        function toggleMobileMenu(menu) {
+                menu.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
