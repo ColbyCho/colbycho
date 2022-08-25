@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/markit.css">
+    <link rel="stylesheet" href="css/athenahealth.css">
     <link rel="shortcut icon" type="image/ico" href="images/flavicon2.png"/>
     <title>About</title>
 </head>
@@ -46,109 +46,223 @@
         <div id="banner">
             <img src="images/athenahealth.png" alt="athenahealth">
         </div>
-        <h3>Coming Soon...</h3>
-        <!-- <div class="project-details">
-            <br>
+        <br>
+        <div class="project-details">
             <div class="new-design-spec">
-                <h3>Background</h3>
-                <p>Markit Social, Inc. is a new Boston-based social media app that helps young adults find, plan, and attend local events with friends. The app functions similarly to Tinder in that users swipe right or left on their home page to indicate interest in certain events.</p>
-                <p>Ultimately, Markit is trying to revolutionize the event industry through their all-in-one platform, providing event-goers and event-hosters with a seamless plan-to-action experience.</p>
-                <img src="images/appstore.png" alt="appstore screenshots">
+                <h3>About athenahealth</h3>
+                <p>Based in Watertown, Massachussetts, athenahealth is a cloud-based SaaS company that provides network-enabled services, mobile apps, and data-driven insights to hospitals and medical organizations.</p>
+                <p>Athenahealth drives clinical and financial results through the expansion of their revenue cycle management, clinical record, and patient engagement services, and the opening of their network to other partners, care settings, and providers.</p>
+                <p>Athenahealth's vision: To create a thriving ecosystem that delivers accessible, high-quality, and sustainable healthcare for all.</p>
             </div>
             <br>
             <div class="new-design-spec">
                 <h3>My Role</h3>
-                <p>I served as one of two Product Development Interns and as a Business Lead. I helped craft Markit's UI by conducting user research, engaging in persona development, wireframing, usability testing, and more.</p>
-                <img src="images/markitsquad.jpg" alt="the markit team">
+                <p>I served as the sole UX Designer within a scrum team consisting of a Product Manager and four Software Developers. I was responsible for...</p>
+                <ul>
+                    <li>Conducting user research and framing the problems to be solved</li>
+                    <li>Creating and iterating on designs for an improved experience</li>
+                    <li>Validating new designs through concept validation and usability testing</li>
+                    <li>Identifying success metrics and evaluating the success of the project</li>
+                </ul>
+                <img src="images/valkeries.png" alt="the team">
             </div>
             <br>
             <div class="new-design-spec">
                 <h3>The Challenge</h3>
-                <p>In light of recent user interviews, Markit’s core value proposition changed. We found that people valued the planning aspect of the original app much more than the app’s previous features. The newfound mission was (and is) to create the ultimate event-planning platform in which users could explore, plan, and attend local events without having to hop between services like Facebook events and Ticketmaster. This pivoted warranted a near-complete redesign of the app.</p>
+                <p>The problem space revolved around revamping the Jotter tool, a drawing application that allows providers to capture clinical findings and notes in a visual manner with images and annotations. This tool exists within athenaNet, athenahealth's electronic health record system. Certain specialties such as dermatology rely heavily on the Jotter for documentation.</p>
+                <p>The original Jotter (as seen below) had an old-fashioned UI that could benefit from modern touches to allow for a more seamless and delightful user experience. Moreover, this tool's antiquated design forced users to develop odd workarounds for their needs (something I will expound upon later). There was an opportunity to improve the usability and feature set of the Jotter.</p>
+                <p>Meeting expectations: Build a functioning version of the Jotter tool on new tech, built to parity, by the end of the summer.</p>
+                <p>Exceeding expectations: Include features and functionality beyond parity that were learned from user research during the summer.</p>
+                <img class="box-shadow" src="images/OGJotter.png" alt="the original Jotter">
             </div>
-            <br>
+            <br><br>
             <div class="new-design-spec">
-                <h3>Revisiting Personas</h3>
-                <p>As a result of such a drastic change in the app's value, we needed to revisit our personas. We changed these personas to reflect the sentiment expressed by so many Markit users during interviews: People want a centralized place for local event-exploration and planning.</p>
-                <img src="images/Persona1.png" alt="persona 1">
-                <img src="images/Persona2.png" alt="persona 2">
+                <h3>Discovery</h3>
+                <p>My initial research aimed to capture how clinicians currently use the Jotter tool and how it might be improved. I picked up where others had left off, as this project was initially conceived earlier in the year, but was dropped during the discovery phase. I...</p>
+                <ul>
+                    <li>Analyzed the existing research</li>
+                    <li>Interviewed two internal providers and seven external clinicians, selected from a list of specialty providers who were known to have used the Jotter on a regular basis</li>
+                    <li>Conducted Voice of the Customer (VoC) analysis, where I sifted through customer feedback boards for the Jotter tool</li>
+                </ul>
+                <div class="links">
+                    <a target="_blank" href="CLIN-JotterResearchPlan-110822-1553-122.pdf">Jotter Research Plan</a>
+                </div>
+                <h4>Key Takeaways</h4>
+                <p>Primary users of the Jotter tool are specialty providers (e.g., Gynecologists, Dermatologists, and Cardiologists).</p>
+                <p>A typical annotation might look like this:</p>
+                <img src="images/annotation.png" alt="typical drawing"><br>
+                <p>I thematically clustered the feedback I recieved from interviees and VoC analysis. Much of this feedback fell into one of three categories: usability-related, specialty-specific, or related to patient communication; the vast majority of which fell into usability-related issues, like making it easier to find and upload custom templates. This was especially the case since the original Jotter was a particularly clunky and outdated tool. For instance, the sea of checkboxes for selecting anatomical templates that dominated the header of the application often left clinicians endlessly searching for the appropriate template, wasting valuable patient-facing time. Or, as was the case for a Dermatologists I spoke to, he uploaded excessively large templates to counteract a large preset drawing stroke width for each patient encounter.</p>
+                <p>A common theme across this research, however, was the desire to minimize the number of clicks during and after an encounter in order to save valuable patient-facing time.</p>
+                
+                <br>
+                <p id="quote">“…our goal is to sort of minimize clicks and be able to get out of the the encounter around the same time we're leaving the room so we don't have a huge burden charting to do later on.”</p>
+                <br>
+                <p id="quote">-Dr. X</p>
+                <br>
+
+                <p>This theme fueled the way I prioritized the features I wanted to implement in the redesign.</p>
+            <div class="links">
+                <a target="_blank" href="Jotter Research Interview Findings Readout.pdf">Jotter Research Interview Findings Readout</a>
             </div>
-            <br>
+            </div>
+            <br><br>
             <div id="new-ui">
-                <h3>Designing the New UI</h3>
-                <h4>A New Onboarding Experience</h4>
+                <h3>New Tool, New Look</h3>
+                <p>The new Jotter tool will provide users with a streamlined interface that enforces less clicks and more time facing the patient. 
+                    Included in this redesign are features that clinicians have been asking for: 
+                </p>
+                <ul>
+                    <li>The ability to upload templates or images directly in Jotter</li>
+                    <li>The frequently used label tool</li>
+                    <li>A dropdown menu for template selection</li>
+                    <li>A revamped tool set</li>
+                </ul>
+                <div class="links">
+                    <a href="https://tuftscloud-my.sharepoint.com/:x:/g/personal/ccho02_tufts_edu/ESAWXZOiyrFDlkXihVLof2QBXFSSldERytdvJG3rrrtDrQ?e=aGzHkh">Jotter Feature List and Impact</a>
+                </div>
+                <h4>Uploading Images/Templates Directly Into the Jotter</h4>
+                <p>Key Terms:</p>
+                <p>Template = anatomical diagram</p>
+                <p>Image = photograph</p>
                 <h5>User Requirements</h5>
                 <ul>
-                    <li>The fewer the steps the better. E.g., Users interviewed did not want to complete steps that they deemed "unnecessary."</li>
-                    <li>The experience must be intuitive/simple.</li>
+                    <li>Ability to upload patient photos or procedures (and annotate on them) directly from the user's local system into the Jotter canvas</li>
+                    <li>Automatically (as opposed to manually) tie images to the current patient encounter notes</li>
+                    <li>Have images appear in the HPI, ROS, Physical Exam, A/P, and Full Encounter Summary sections of the encounter</li>
                 </ul>
                 <h5>Solution</h5>
-                <p>I crafted as direct an onboarding experience as possible. I allowed for skippable steps where justified while also acquiring all of the required user input.</p>
-                <img src="images/wireframe.png" alt="onboarding wireframes">
-                <img src="images/onboarding.png" alt="onboarding 1">
-                <img src="images/onboarding2.png" alt="onboarding 2">
-                <br><br>
-                <h5>Methods</h5>
-                <p>High-fidelity wireframing (Figma) and user interviews</p>
+                <p>I placed an upload button in a highly visible place on the canvas (circled in red on the first frame), directly next to the template dropdown menu, so that clinicians would associate the upload funtionality with the list of uploads in the dropdown menu.</p>
+                <img src="images/upload1.png" alt="upload 1">
+                <p>I also included a drag and drop space for easier uploading and a status bar to provide the user with feedback on the progress of their current upload(s).</p>
+                <img src="images/upload2.png" alt="upload 2">
+                <img src="images/upload3.png" alt="upload 3">
+                <p>Once all files have been uploaded, they appear in the dropdown menu and on the canvas.</p>
                 <br>
 
                 <hr>
                 
-                <h4>A Redesigned Homepage</h4>
+                <h4>The Frequently Used Label Tool</h4>
+                <p>Clinicians (especially Dermatologists) waste precious time labeling their marks with qualifiers like biopsy, lesion etc., often resorting to shorthand/acronyms to describe their drawings. These clinicians see the same or even redundant cases where they will rewrite/redraw the same annotation repeatedly for each encounter.</p>
                 <h5>User Requirements</h5>
                 <ul>
-                    <li>The home feed must be engaging and spark excitement.</li>
-                    <li>The home feed must facilitate local event-finding</li>
-                    <li>The experience must support three key functions: indicating interest, disinterest, or attendance for an event</li>
+                    <li>Enforce fewer clicks when marking up the canvas with text and annotations</li>
+                    <li>Allow for the creation of custom stickers that represent certain procedures, lesions, etc. that can be saved and used for future encounters</li>
                 </ul>
                 <h5>Solution</h5>
-                <p>After ideating and deliberating, we agreed on a Tinder-esque, card-style home page in which users would be presented with one event at a time, swiping right to indicate interest, left for disinterest, up if the user was going to the event, and tapping for more event details.</p>
-                <div id="swipe-frames">
-                    <img id="home-page" src="images/swiping.png" alt="markit home page">
-                    <img id="event-page" src="images/event.png" alt="markit event page">
-                </div>
-                <br>
-                <h5>Rationale</h5>
+                <p>I created a modified version of the text tool to address the aforementioned user requirements. Once a user creates a label, the label remains on the right hand pane of the canvas for all future encounters until the user deletes it.</p>
+                <img src="images/label1.png" alt="label 1">
+                <img src="images/label2.png" alt="label 2">
+                <p>"LAC" is shorthand for Laceration.</p>
+                <img src="images/label3.png" alt="label 3">
+                <p>The labels to the right may be placed anywhere on the canvas.</p>
+                <img src="images/label5.png" alt="label 5">                
+                <br><br><br>
+
+                <hr>
+
+                <h4>A Multi-Select Dropdown Menu for Easier Images/Template Selection</h4>
+                <p>The current Jotter lists all of the user's saved templates on the header of the UI, forcing users with several saved templates to have to search through a sea of checkboxes to select the template that they want to use. This makes the template selection process overwhelming, clunky, and reduces the size of the drawing pane. </p>
+                <h5>User Requirements</h5>
                 <ul>
-                    <li>This interface fit within our personas' mental models (college students/young adults) who regularly use dating apps like Tinder and Bumble.</li>
-                    <li>The design was validated via user testing.</li>
+                    <li>Make it easier to find images/templates -anything is better than searching through a sea of checkboxes</li>
+                    <li>Implement a search functionality, enabling users to search for their desired images/templates</li>
+                    <li>Maintain the ability to select multiple images/templates at once</li>
+                    <li>Preserve more space at the header of the tool, the original template selection took up too much canvas space</li>
                 </ul>
-                <h5>Methods</h5>
-                <p>High-fidelity wireframing (Figma), user workflows, and user testing</p>
+                <h5>Solution</h5>
+                <p>For the redesign, I created a dropdown menu with search functionality, a familiar web component for users. This dropdown menu is split into three sections for quick access: recent uploads, saved templates (should the user choose to save his/her templates for future use), and global templates (athenaNet provided templates). Selected images/templates appear in the left hand pane under "In use," where the user may toggle between his/her selections.</p>
+                <img src="images/dropdown1.png" alt="dropdown 1">
+                <br>
                 <br>
 
                 <hr>
 
-                <h4>The Event Calendar</h4>
+                <h4>A Revamped Toolset</h4>
                 <h5>User Requirements</h5>
+                <p>Beyond the tools needed to meet parity (i.e., the drawing, text, eraser, stroke width, and stroke color tools), users also requested...</p>
                 <ul>
-                    <li>Users must have a designated place to track upcoming and past events that they are hosting, attending, or are interested in.</li>
-                    <li>This page should support RSVP and external sharing functions.</li>
+                    <li>a selection tool to select and manipulate/delete items on the canvas</li>
+                    <li>a shape tool (circle, square, 'X', and arrow) which would serve as a means of clinical shorthand</li>
+                    <li>undo/redo buttons to quickly undo/redo any changes made on the canvas</li>
+                    <li>zoom in/out and pan to move freely around the selected image or template</li>
                 </ul>
                 <h5>Solution</h5>
-                <p>We crafted an event calendar which could be toggled to show events of a certain type in chronological order.</p>
-                <div id="event-calendar-imgs">
-                    <img id="calendar-1" src="images/calendar1.png" alt="event calendar 1">
-                    <img id="calendar-2" src="images/calendar2.png" alt="event calendar 2">
+                <p>These tools were placed in the header. Below is the shape tool, which upon selection produces a popup where the user may select from any of the shapes and drop them on the canvas. Once placed on the canvas, the selection tool is automatically selected so that users have the ability to move and manipulate the width and height of the shape.</p>
+                <img src="images/shapes.png" alt="shape tool">
+                <p>You can see all of these tools in action + the other new features as described in this redesign in the demo below:</p>
+                <div class="links">
+                    <a target="_blank" href="images/SIPInternPresentation.mp4">Demo</a>
                 </div>
+                
                 <br>
-                <h5>Methods</h5>
-                <p>High-fidelity wireframing (Figma) and user workflows</p>
-                <br>
-
-                <hr>
-
             </div>
             <br>
+
+            <hr>
+
+            <br><br>
+
             <div class="new-design-spec">
-                <h3>The Outcome</h3>
-                <p>Markit Social, Inc. provided me with experience in a real, fast-paced agile environment. Since I joined Markit so early into the startup process, I felt as though everything I was working on —from wireframes to business partnerships —was making a tangible impact on the trajectory of the company. While I was at Markit, we managed to grow our user base by more than threefold: almost half of the Tufts University student body was using the app. Now Markit has expanded to other universities like Northeastern and Duke.</p>
+                <h3>Concept Validation</h3>
+                <p>Armed with a boat-load of hi-fi wireframes, it was now time to validate my work with clients. With the help of athenahealth's productive DesignOps team, I sent out a concept validation survey to 53 athenaNet users. This survey, the results of which I have included below, aimed to gauge clients' impressions of the Jotter tool's new look and function.</p>
+                <p>The feedback was both enlightening and positive. There was a statistically significant 54.9% (3x) increase in the number of users satisfied with the proposed redesign. Moreover, the majority of respondents found uploading images and templates directly through the Jotter tool to be "extremely helpful," further validating the utility of this new feature. Lastly, 75% of respondents agreed that the new Jotter tool would increase their productivity.</p>
+                <p>I also received feedback for areas to explore via the short response section. Though many of these requests were practice-specific and somewhat niche, several were brought up during interviews, so they should be considered by whoever picks up this project next.</p>
+                <img class="box-shadow" src="images/CVS.png" alt="concept validation slide">
+                <br><br>
                 <div class="links">
-                    <a target="_blank" href="https://www.markitsocial.net/">Markit Social website</a>
-                    <a target="_blank" href="https://apps.apple.com/us/app/markit-explore-and-connect/id1549432558">Download Markit</a>
+                    <a target="_blank" href="CVR.pdf">Concept Validation Results</a>
                 </div>
             </div>
-        </div> -->
+
+            <br><br>
+
+            <div class="new-design-spec">
+                <h3>Accomplishments and the Next Steps</h3>
+                <p>My team definitely exceeded expectations and were proud of all that we accomplished over the course of the summer! Of the features we considered implementing based on the discovery research, those highlighted in yellow on the chart below are those that we finished and prioritized for the duration of this internship.
+                   The outstanding features should be considered by whoever moves forward with this project. 
+                </p>
+                <img class="box-shadow" src="images/quad.png" alt="quad chart">
+                <br><br>
+                <ol>
+                    <li>As we continue to move beyond parity, enhancement that</li>
+                    <ul>
+                        <li>are heavily requested by clients and</li>
+                        <li>remove clicks/steps for users will be prioritized</li>
+                    </ul>
+                    <li>Once integrated into athenaNet, we want to conduct usability tests to measure</li>
+                    <ul>
+                        <li>time per patient</li>
+                        <li>number of clicks</li>
+                        <li>overall user satisfaction</li>
+                    </ul>
+                    <li>Experimental Release (~12 users): Want to monitor key workflows and success metrics as defined in the Rollout Plan</li>
+                </ol>
+                <div class="links">
+                    <a target="_blank" href="CLIN-AlphaRolloutPlan-NewJotter-110822-1620-126.pdf">Rollout Plan</a>
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="new-design-spec">
+                <h3>The Outcome</h3>
+                <p>I am most proud to say that this work resulted in more than a 3x increase in user satisfaction for the Jotter tool and will have impacted 79 athena clients. Furthermore, my team's work received strategic value recognition from the CEO and was prioritized for production.</p>
+                <p>During this internship, I accomplished my personal learning objectives. I…</p>
+                <ul>
+                    <li>Carried out the design process from start to almost finish</li>
+                    <li>Worked within a scrum team and learned how to operate within the Agile framework</li>
+                    <li>Learned from experienced designers, my peers, and my mentor</li>
+                    <li>Spoke with real clients and impacted their workflow in a meaningful way (my favorite part of this internship)</li>
+                </ul>
+                <p>I would like to thank my mentor Yiran (ybuckley@athenahealth) and my manager Denise (dlynshue@athenahealth.com) for providing me loads of support and a wonderful experience this summer!</p>
+                <p>What I have described here is a high level overview of the project. If you would like to hear a more in-depth version of all that was presented above, feel free to connect with me!</p>
+                <div class="links">
+                    <a target="_blank" href="http://www.athenahealth.com">athenahealth homepage</a>
+                    <a target="_blank" href="https://tuftscloud-my.sharepoint.com/:p:/g/personal/ccho02_tufts_edu/ETFxBaRXFoFCk6caBPR856IBPkF0oD4NHdgJxTXq_zXhzg?e=4DfpEB">Final Presentation</a>
+                    <a target="_blank" href="https://www.figma.com/file/IEku1MOJU9OkgTXBVQNex4/Jotter?node-id=0%3A1">Figma File</a>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div id="contact">
@@ -163,6 +277,21 @@
         function toggleMobileMenu(menu) {
                 menu.classList.toggle('open');
         }
+
+        // var body = document.getElementsByTagName('body')[0];
+        // body.style.backgroundColor = 'white';
+
+        // // trigger this function every time the user scrolls
+        // window.onscroll = function (event) {
+        //     var scroll = window.pageYOffset;
+        //     if (scroll >= 10000) {
+        //         // orange
+        //         body.style.backgroundColor = 'rgba(88, 44, 131, 1)';
+        //     } else {
+        //         // white
+        //         body.style.backgroundColor = 'white';
+        //     }
+        // }
     </script>
 </body>
 </html>
